@@ -11,23 +11,1263 @@
 <h2>HTML</h2>
 <h3>HTML tags</h3>
 
-<h4>css</h4>
-<h5>css prop</h5>
-<h6>javascript</h6>
-<h7>javascript basics</h7>
-
-<h2>css</h2>
-<h3>css properties</h3>
+<h2>CSS</h2>
+<h3>css prop</h3>
 
 <h2>javascript</h2>
 <h3>javascript basics</h3>
 
-<s>hello</s> <!-strike>
-<br></br> <!-new line->
+<h1>web Development</h1>
+<h2>Frontend</h2>
+<h3>HTML- Website ka skeleton/body banata hai. Jaise heading, paragraph, image, buttons aur forms.</h3>
+<h4>CSS- Website ko beautiful banata hai. Jaise colors, fonts, backgrounds, spacing, animations aur layout.</h4>
+<h5>JavaScript- Website ko interactive aur dynamic banata hai. Jaise button click, calculations, form validation aur menu open/close.</h5>
+<h6>Backend</h6>
 
-<b>I am Prachi Prajapati</b><!-bold->
+<p>I am Prachi Prajapati</p><!-Paragraph->
+<s>I am Prachi Prajapati</s> <!-strike><br><!-new line->
+<b>I am Prachi Prajapati</b><!-bold-><br>
+<strong>I am Prachi Prajapati</strong><!-bold-><br>
+<i>I am Prachi Prajapati</i><!-italic-><br>
+<em>I am Prachi Prajapati</em><!-italic-><br>
+<u>I am Prachi Prajapati</u><!-underline-><br>
 
-<br></br>
 
-<strong>I live in Panagar</strong>
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Practice - Prachi</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        section,
+        article,
+        aside {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        aside {
+            background-color: #fff3cd;
+        }
+
+        img {
+            width: 250px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        video {
+            display: block;
+            margin-top: 15px;
+            border-radius: 10px;
+        }
+
+        input {
+            margin: 5px;
+            padding: 5px;
+        }
+
+        button,
+        input[type="submit"],
+        input[type="button"] {
+            padding: 8px 15px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .input-box {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <!-- hgroup = heading + related subtitle ko group karta hai -->
+        <hgroup>
+            <h1>Prachi's Web Development</h1>
+            <p>HTML Practice Page</p>
+        </hgroup>
+
+
+        <!-- nav = navigation links -->
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#form">Form</a>
+            <a href="#media">Media</a>
+        </nav>
+
+
+        <!-- search = search related content -->
+        <search>
+            <form>
+                <input type="search" placeholder="Search here...">
+                <button type="submit">Search</button>
+            </form>
+        </search>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+    <main>
+
+        <!-- ================= SECTION 1 ================= -->
+        <section id="home">
+
+            <h2>HTML Headings</h2>
+
+            <!-- h1 to h6 = different levels of headings -->
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+
+
+            <!-- p = paragraph -->
+            <p>This is my first paragraph.</p>
+
+            <!-- br = line break -->
+            <p>
+                Hello Prachi
+                <br>
+                Welcome to Web Development.
+            </p>
+
+            <!-- hr = horizontal line -->
+            <hr>
+
+        </section>
+
+
+        <!-- ================= SECTION 2 ================= -->
+        <section id="about">
+
+            <h2>About HTML</h2>
+
+            <p>
+                HTML stands for HyperText Markup Language.
+                It is used to create the structure of webpages.
+            </p>
+
+
+            <!-- pre = spaces and line breaks preserve karta hai -->
+            <h3>Normal Text vs Preformatted Text</h3>
+
+            <p>
+                Hello
+                My name is Prachi.
+            </p>
+
+            <pre>
+Hello
+    My name is Prachi.
+        I am learning Web Development.
+            </pre>
+
+        </section>
+
+
+        <!-- ================= LISTS ================= -->
+        <section>
+
+            <h2>HTML Lists</h2>
+
+            <!-- ol = ordered list -->
+            <h3>Ordered List</h3>
+
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ol>
+
+
+            <!-- ul = unordered list -->
+            <h3>Unordered List</h3>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+
+            <!-- Real-life example -->
+            <h3>Shopping List</h3>
+
+            <ul>
+                <li>Milk</li>
+                <li>Bread</li>
+                <li>Apple</li>
+            </ul>
+
+
+            <h3>Tea Making Steps</h3>
+
+            <ol>
+                <li>Water boil karo</li>
+                <li>Tea add karo</li>
+                <li>Milk add karo</li>
+            </ol>
+
+        </section>
+
+
+        <!-- ================= LINKS ================= -->
+        <section>
+
+            <h2>HTML Links</h2>
+
+            <!-- a = anchor/link -->
+            <a href="https://www.google.com/" target="_blank">
+                Open Google
+            </a>
+
+        </section>
+
+
+        <!-- ================= FORM ================= -->
+        <section id="form">
+
+            <h2>HTML Form & Input Types</h2>
+
+            <form>
+
+                <!-- text input -->
+                <div class="input-box">
+                    <label for="name">Name:</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name">
+                </div>
+
+
+                <!-- password input -->
+                <div class="input-box">
+                    <label for="password">Password:</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Enter your password">
+                </div>
+
+
+                <!-- email input -->
+                <div class="input-box">
+                    <label for="email">Email:</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email">
+                </div>
+
+
+                <!-- date input -->
+                <div class="input-box">
+                    <label for="date">Date:</label>
+
+                    <input
+                        type="date"
+                        id="date"
+                        name="date">
+                </div>
+
+
+                <!-- datetime-local -->
+                <div class="input-box">
+                    <label for="meeting">
+                        Date & Time:
+                    </label>
+
+                    <input
+                        type="datetime-local"
+                        id="meeting"
+                        name="meeting">
+                </div>
+
+
+                <!-- radio buttons -->
+                <p>Select Gender:</p>
+
+                <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="male">
+
+                <label for="male">Male</label>
+
+
+                <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="female">
+
+                <label for="female">Female</label>
+
+
+                <!-- checkbox -->
+                <p>Select your skills:</p>
+
+                <input
+                    type="checkbox"
+                    id="html"
+                    name="skill"
+                    value="html">
+
+                <label for="html">HTML</label>
+
+
+                <input
+                    type="checkbox"
+                    id="css"
+                    name="skill"
+                    value="css">
+
+                <label for="css">CSS</label>
+
+
+                <input
+                    type="checkbox"
+                    id="javascript"
+                    name="skill"
+                    value="javascript">
+
+                <label for="javascript">JavaScript</label>
+
+
+                <!-- color -->
+                <p>Select Color:</p>
+
+                <input
+                    type="color"
+                    name="color">
+
+
+                <!-- file -->
+                <p>Select Resume:</p>
+
+                <input
+                    type="file"
+                    name="resume">
+
+
+                <!-- value attribute -->
+                <p>Value Example:</p>
+
+                <input
+                    type="text"
+                    value="Prachi">
+
+
+                <!-- submit -->
+                <br><br>
+
+                <input
+                    type="submit"
+                    value="Submit Form">
+
+
+                <!-- button -->
+                <input
+                    type="button"
+                    value="Click Here">
+
+            </form>
+
+        </section>
+
+
+        <!-- ================= MEDIA ================= -->
+        <section id="media">
+
+            <h2>Images & Videos</h2>
+
+
+            <!-- img = image -->
+            <h3>Image</h3>
+
+            <img
+                src="https://ts3.mm.bing.net/th?id=OIP.wezPWM0gMFPwo5LjNodYjwHaGp&pid=15.1"
+                alt="Flower Image">
+
+
+            <!-- video = video -->
+            <h3>Video</h3>
+
+            <!-- Make sure this video file exists in your project folder -->
+            <video
+                width="400"
+                height="250"
+                controls>
+
+                <source
+                    src="./VID-20201215-WA0001.mp4"
+                    type="video/mp4">
+
+                Your browser does not support video.
+            </video>
+
+        </section>
+
+
+        <!-- ================= DIV & STYLE ================= -->
+        <section>
+
+            <h2>Div & Style Attribute</h2>
+
+            <!-- div = content ko group karne ke liye -->
+            <div>
+
+                <h3>My Website</h3>
+
+                <p>Welcome to my website.</p>
+
+
+                <!-- style attribute -->
+                <p style="color: red;">
+                    This text is red.
+                </p>
+
+
+                <p style="background-color: yellow;">
+                    This paragraph has yellow background.
+                </p>
+
+
+                <p style="font-size: 25px;">
+                    This text is bigger.
+                </p>
+
+
+                <!-- Multiple CSS properties -->
+                <p
+                    style="
+                        color: red;
+                        font-size: 25px;
+                        background-color: yellow;
+                    ">
+
+                    Multiple styles applied.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ARTICLE ================= -->
+        <section>
+
+            <h2>Articles</h2>
+
+
+            <!-- article = independent/self-contained content -->
+            <article>
+
+                <h3>How to Learn HTML?</h3>
+
+                <p>
+                    HTML is the first step in learning Web Development.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <h3>Why Learn CSS?</h3>
+
+                <p>
+                    CSS is used to style HTML webpages.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <h3>Why Learn JavaScript?</h3>
+
+                <p>
+                    JavaScript makes webpages interactive.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- ================= ASIDE ================= -->
+        <aside>
+
+            <h2>Did You Know?</h2>
+
+            <p>
+                HTML is used to create the structure of a webpage.
+            </p>
+
+            <p>
+                CSS is used for styling.
+            </p>
+
+        </aside>
+
+
+        <!-- ================= ADDRESS ================= -->
+        <section>
+
+            <h2>Contact Information</h2>
+
+            <!-- address = contact/author information -->
+
+            <address>
+
+                Written by Prachi.<br>
+                Email: prachi@example.com<br>
+                India
+
+            </address>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <p>
+            © 2026 Prachi. All Rights Reserved.
+        </p>
+
+        <p>
+            Learning Web Development 🚀
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Mobile/responsive setting -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Browser tab ka title -->
+    <title>Prachi HTML Practice</title>
+</head>
+
+<body>
+
+    <!-- ================= HEADINGS ================= -->
+
+    <h1>Hello</h1>
+    <h2>Hello</h2>
+    <h3>Hello</h3>
+    <h4>Hello</h4>
+    <h5>Hello</h5>
+    <h6>Hello</h6>
+
+
+    <!-- ================= PARAGRAPH ================= -->
+
+    <p>My First Paragraph</p>
+
+    <!-- br = line break -->
+    <p>
+        Hello Prachi
+        <br>
+        Welcome to Web Development.
+    </p>
+
+
+    <!-- hr = horizontal line -->
+    <hr>
+
+
+    <!-- ================= TEXT FORMATTING ================= -->
+
+    <h2>Text Formatting</h2>
+
+    <p><b>Bold Text</b></p>
+
+    <p><strong>Strong Text</strong></p>
+
+    <p><i>Italic Text</i></p>
+
+    <p><em>Emphasized Text</em></p>
+
+    <p><u>Underlined Text</u></p>
+
+    <p><s>Strikethrough Text</s></p>
+
+    <p><mark>Highlighted Text</mark></p>
+
+    <p><small>Small Text</small></p>
+
+
+    <!-- ================= ORDERED LIST ================= -->
+
+    <h2>Ordered List</h2>
+
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+
+    <!-- ================= UNORDERED LIST ================= -->
+
+    <h2>Unordered List</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+
+    <!-- ================= REAL LIFE LIST EXAMPLE ================= -->
+
+    <!-- Shopping List -->
+
+    <h2>Shopping List</h2>
+
+    <ul>
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Apple</li>
+    </ul>
+
+
+    <!-- Tea Making Steps -->
+
+    <h2>Tea Making Steps</h2>
+
+    <ol>
+        <li>Water boil kro</li>
+        <li>Tea add kro</li>
+        <li>Milk add kro</li>
+    </ol>
+
+
+    <hr>
+
+
+    <!-- ================= LINK / A TAG ================= -->
+
+    <h2>HTML Link</h2>
+
+    <a href="https://www.google.com/" target="_blank">
+        Google
+    </a>
+
+
+    <br><br>
+
+
+    <!-- ================= IMAGE ================= -->
+
+    <h2>Image</h2>
+
+    <!-- Absolute URL -->
+    <img
+        src="https://ts3.mm.bing.net/th?id=OIP.wezPWM0gMFPwo5LjNodYjwHaGp&pid=15.1"
+        width="200"
+        height="200"
+        alt="Image not found">
+
+
+    <br><br>
+
+
+    <!-- Relative URL example
+         Agar project ke andar images folder ho:
+         <img src="images/photo.jpg" alt="My Photo">
+    -->
+
+
+    <!-- ================= VIDEO ================= -->
+
+    <h2>Video</h2>
+
+    <video width="400" height="250" controls>
+        <source
+            src="./VID-20201215-WA0001.mp4"
+            type="video/mp4">
+
+        Your browser does not support video.
+    </video>
+
+
+    <hr>
+
+
+    <!-- ================= FORM ================= -->
+
+    <h2>HTML Form</h2>
+
+    <form>
+
+        <!-- Text input -->
+
+        <label for="name">Enter Name:</label>
+
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your Name">
+
+        <br><br>
+
+
+        <!-- Password input -->
+
+        <label for="password">Enter Password:</label>
+
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your Password">
+
+        <br><br>
+
+
+        <!-- Email input -->
+
+        <label for="email">Enter Email:</label>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your Email">
+
+        <br><br>
+
+
+        <!-- Number input -->
+
+        <label for="age">Enter Age:</label>
+
+        <input
+            type="number"
+            id="age"
+            name="age"
+            placeholder="Enter your age">
+
+        <br><br>
+
+
+        <!-- Date input -->
+
+        <label for="date">Select Date:</label>
+
+        <input
+            type="date"
+            id="date"
+            name="date">
+
+        <br><br>
+
+
+        <!-- Time input -->
+
+        <label for="time">Select Time:</label>
+
+        <input
+            type="time"
+            id="time"
+            name="time">
+
+        <br><br>
+
+
+        <!-- Date and Time -->
+
+        <label for="datetime">
+            Select Date and Time:
+        </label>
+
+        <input
+            type="datetime-local"
+            id="datetime"
+            name="datetime">
+
+        <br><br>
+
+
+        <!-- Radio Button -->
+
+        <p>Select Gender:</p>
+
+        <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male">
+
+        <label for="male">Male</label>
+
+
+        <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female">
+
+        <label for="female">Female</label>
+
+        <br><br>
+
+
+        <!-- Checkbox -->
+
+        <p>Select your skills:</p>
+
+        <input
+            type="checkbox"
+            id="html"
+            name="language"
+            value="html">
+
+        <label for="html">HTML</label>
+
+
+        <input
+            type="checkbox"
+            id="css"
+            name="language"
+            value="css">
+
+        <label for="css">CSS</label>
+
+
+        <input
+            type="checkbox"
+            id="javascript"
+            name="language"
+            value="javascript">
+
+        <label for="javascript">JavaScript</label>
+
+        <br><br>
+
+
+        <!-- Color -->
+
+        <label for="color">
+            Select Color:
+        </label>
+
+        <input
+            type="color"
+            id="color"
+            name="color">
+
+        <br><br>
+
+
+        <!-- File -->
+
+        <label for="resume">
+            Select Resume:
+        </label>
+
+        <input
+            type="file"
+            id="resume"
+            name="resume">
+
+        <br><br>
+
+
+        <!-- Search -->
+
+        <label for="search">
+            Search:
+        </label>
+
+        <input
+            type="search"
+            id="search"
+            name="search"
+            placeholder="Search here">
+
+        <br><br>
+
+
+        <!-- URL -->
+
+        <label for="website">
+            Website:
+        </label>
+
+        <input
+            type="url"
+            id="website"
+            name="website"
+            placeholder="Enter website URL">
+
+        <br><br>
+
+
+        <!-- Telephone -->
+
+        <label for="phone">
+            Phone:
+        </label>
+
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Enter phone number">
+
+        <br><br>
+
+
+        <!-- Range -->
+
+        <label for="range">
+            Select Range:
+        </label>
+
+        <input
+            type="range"
+            id="range"
+            name="range">
+
+        <br><br>
+
+
+        <!-- VALUE attribute -->
+
+        <p>Value Example:</p>
+
+        <input
+            type="text"
+            value="Prachi">
+
+        <br><br>
+
+
+        <!-- Normal Button -->
+
+        <input
+            type="button"
+            value="Click Here">
+
+        <br><br>
+
+
+        <!-- Submit Button -->
+
+        <input
+            type="submit"
+            value="Submit">
+
+        <br><br>
+
+
+        <!-- Reset Button -->
+
+        <input
+            type="reset"
+            value="Reset">
+
+    </form>
+
+
+    <hr>
+
+
+    <!-- ================= DIV ================= -->
+
+    <h2>DIV Example</h2>
+
+    <!-- div = elements ko group karne wala container -->
+
+    <div>
+
+        <h3>My Website</h3>
+
+        <p>Welcome to my website.</p>
+
+        <p>I am learning Web Development.</p>
+
+    </div>
+
+
+    <!-- ================= PRE ELEMENT ================= -->
+
+    <h2>PRE Element</h2>
+
+    <p>
+        This is normal text.
+        Extra spaces and lines are generally ignored.
+    </p>
+
+    <pre>
+This is preformatted text.
+
+    Spaces are preserved.
+
+        Line breaks are preserved.
+    </pre>
+
+
+    <!-- ================= ADDRESS ================= -->
+
+    <h2>Contact Information</h2>
+
+    <address>
+
+        Written by Prachi.<br>
+        Email: prachi@example.com<br>
+        Phone: +91 7828949499<br>
+        India
+
+    </address>
+
+
+    <hr>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <h1>Prachi's Website</h1>
+
+        <p>Welcome to my website.</p>
+
+    </header>
+
+
+    <!-- ================= NAV ================= -->
+
+    <nav>
+
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <hr>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <h2>Main Content</h2>
+
+        <p>
+            This is the main content of my webpage.
+        </p>
+
+
+        <!-- ================= SECTION ================= -->
+
+        <section id="about">
+
+            <h2>About Me</h2>
+
+            <p>
+                I am learning Web Development.
+            </p>
+
+        </section>
+
+
+        <section id="skills">
+
+            <h2>My Skills</h2>
+
+            <p>
+                HTML, CSS and JavaScript
+            </p>
+
+        </section>
+
+
+        <!-- ================= ARTICLE ================= -->
+
+        <section>
+
+            <h2>Articles</h2>
+
+            <article>
+
+                <h3>How to Learn HTML?</h3>
+
+                <p>
+                    HTML is the basic language
+                    used to create webpages.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <h3>Why Learn Web Development?</h3>
+
+                <p>
+                    Web Development helps us
+                    create websites and web applications.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- ================= ASIDE ================= -->
+
+        <aside>
+
+            <h3>Did You Know?</h3>
+
+            <p>
+                HTML stands for
+                HyperText Markup Language.
+            </p>
+
+        </aside>
+
+    </main>
+
+
+    <!-- ================= HGROUP ================= -->
+
+    <hgroup>
+
+        <h1>Web Development</h1>
+
+        <p>Learn HTML step by step.</p>
+
+    </hgroup>
+
+
+    <!-- ================= SEARCH ================= -->
+
+    <search>
+
+        <form>
+
+            <input
+                type="search"
+                placeholder="Search something">
+
+            <button type="submit">
+                Search
+            </button>
+
+        </form>
+
+    </search>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 Prachi. All rights reserved.
+        </p>
+
+        <p>
+            Learning Web Development 🚀
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
