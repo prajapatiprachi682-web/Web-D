@@ -23,7 +23,34 @@
         <br><br>
 
         <!-- Email Input -->
-            <label for="useremail">Email Address:</label><br>
-            <input type="email" id="useremail" name="email" placeholder="example@gmail.com" required>
-            <br><br>
+        <label for="useremail">Email Address:</label><br>
+        <input type="email" id="useremail" name="email" placeholder="example@gmail.com" required>
+        <br><br>
+
+        <!--Password Input-->
+        <label for="userpass">Create Password:</label><br>
+        <input type="password" id="userpass" name="password" placeholder="Min 8 characters" required>
+        <br><br>
+
+        <!--Number Input with min & max-->
+        <label for="userage">Age(18 to 60):</label><br>
+        <input type="number" id="userage" name="age" min="18" max="60">
+        <br><br>
+
+        <!--Data Input-->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <!--Radio Buttons (Sirf ek select hoga kyunki 'name' same hai)-->
+        <label>Gender:</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+
+        <input type="radio" name="gender" id="other" value="other">
+        <label for="other">Other</label>
     </fieldset>
+    <br>
